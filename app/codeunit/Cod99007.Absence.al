@@ -1,18 +1,18 @@
 codeunit 99007 Absence implements AbsenceContract
 {
     procedure Construct(
-        StartDateTime: DateTime;
-        EndDateTime: DateTime;
-        Reason: Enum AbsenceReason;
-        Note: Text[140];
-        Employee: Record Employee
+        var StartDateTimeParam: DateTime;
+        var EndDateTimeParam: DateTime;
+        var ReasonParam: Enum AbsenceReason;
+        var NoteParam: Text[140];
+        var EmployeeParam: Record Employee
     )
     begin
-        StartDateTime := StartDateTime;
-        EndDateTime := EndDateTime;
-        Reason := Reason;
-        Note := Note;
-        Employee := Employee;
+        StartDateTime := StartDateTimeParam;
+        EndDateTime := EndDateTimeParam;
+        Reason := ReasonParam;
+        Note := NoteParam;
+        Employee := EmployeeParam;
     end;
 
     procedure Create(): Boolean
